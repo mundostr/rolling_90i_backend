@@ -16,5 +16,5 @@ app.use('/api/products', productsRouter);
 
 app.listen(config.PORT, async () => {
     await mongoose.connect(config.MONGODB_URL);
-    console.log(`API activa puerto ${config.PORT}, conectada a ${config.MONGODB_URL}`);
+    console.log(`APP activa puerto ${config.PORT} y conectada a ${config.MONGODB_URL}`);
 });
